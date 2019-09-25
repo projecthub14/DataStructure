@@ -106,7 +106,6 @@ public class DoublyLinkedListTail<T> {
             headNode.prevNode = null;
         }
         size--;
-
     }
 
     public void deleteAtTail() {
@@ -121,7 +120,6 @@ public class DoublyLinkedListTail<T> {
             tailNode.nextNode = null;
         }
         size--;
-
     }
 
     public static void main(String[] args) {
@@ -141,31 +139,6 @@ public class DoublyLinkedListTail<T> {
         list.printList();
 
 
-//        System.out.println("\nInserting 8 after 2\n");
-//        list.insertAfter(8,2);
-//        list.printList();
-//
-//        System.out.println("\nInserting 10 after 3\n");
-//        list.insertAfter(10,3);
-//        list.printList();
-
-       // System.out.println("\nSearch 6");
-      //  boolean found = list.searchNode(6);
-//        if(found) {
-//            System.out.println("Item 6  found"  );
-//        }
-//        else {
-//            System.out.println("Item 6 not found"  );
-//        }
-//
-//        System.out.println("Delete at head\n");
-//        list.deleteAtHead();
-//        System.out.println("After : Delete at head");
-//        list.printList();
-//        System.out.println("Delete by value\n");
-//        list.deleteByValue(4);
-//        list.printList();
-//        System.out.println("After : Delete by value\n");
 
 
     }
