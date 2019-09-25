@@ -9,6 +9,7 @@ public class MiddleValueLinkedList {
             return null;
         }
 
+
         //both the nodes start from the head
         SinglyLinkedList.Node mid = list.headNode;
         SinglyLinkedList.Node current = list.headNode;
