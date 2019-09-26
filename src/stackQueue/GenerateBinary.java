@@ -26,7 +26,7 @@ public class GenerateBinary {
 
     public static void main(String[] args) {
 
-        String[] result = generateBinary(4);
+        String[] result = generateBinary(6);
         for(String i : result){
             System.out.print(i + " ");
         }
