@@ -3,6 +3,8 @@ package graph;
 import linkedList.DoublyLinkedList;
 import stackQueue.Queue;
 
+//Time complexity is O(V + E)
+//First In First Out (FIFO) of graph ensures traversal of graph one level at time
 public class BreadFirstSearch {
 
     public static String bfsTraversal(Graph g , int source) {
