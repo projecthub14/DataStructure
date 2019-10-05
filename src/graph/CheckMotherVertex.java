@@ -4,6 +4,12 @@ import linkedList.DoublyLinkedList;
 
 import java.util.Arrays;
 
+//The theory is that the last vertex visited in the recursive DFS will be the mother vertex.
+// This is because, at the last vertex, all slots in visited would be true (DFS only stops when all nodes are visited).
+// Hence, we keep track of this last vertex using lastV.
+
+//DFS whole graph works in O(V+E)
+//if mother index exists then second DFS takes another O(V+E)
 public class CheckMotherVertex {
 
     public static int checkMotherVertex(Graph g){
