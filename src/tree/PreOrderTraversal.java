@@ -2,6 +2,7 @@ package tree;
 
 public class PreOrderTraversal {
 
+    //level by level order where it print left child before right child
     public static  void preOrder(Node root){
         if(root == null){
             return;
