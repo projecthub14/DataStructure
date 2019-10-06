@@ -4,6 +4,7 @@ import linkedList.DoublyLinkedList;
 
 import java.util.Stack;
 
+//Time Complexity : O(V+E)
 public class CheckTreeApproach1 {
 
     public static boolean isTree(Graph g ){
