@@ -1,4 +1,7 @@
-package tree;
+package tree.minValue;
+
+import tree.bstImpl.BinarySearchTreeIterative;
+import tree.bstImpl.Node;
 
 //time complexity is O(n)
 public class FindMinValue {

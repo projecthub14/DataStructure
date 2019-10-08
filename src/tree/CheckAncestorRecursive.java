@@ -1,5 +1,8 @@
 package tree;
 
+import tree.bstImpl.BinarySearchTreeIterative;
+import tree.bstImpl.Node;
+
 public class CheckAncestorRecursive {
 
     public static boolean checkAncestor(Node root, int target){

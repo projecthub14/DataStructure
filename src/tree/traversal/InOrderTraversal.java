@@ -1,17 +1,18 @@
-package tree;
+package tree.traversal;
 
-public class PreOrderTraversal {
+import tree.bstImpl.BinarySearchTreeIterative;
+import tree.bstImpl.Node;
 
-    //level by level order where it print left child before right child
-    public static  void preOrder(Node root){
+public class InOrderTraversal {
+
+    //prints tree in non decreasing order
+    public static void inOrder(Node root){
         if(root == null){
             return;
         }
+        inOrder(root.getLeftChild());
         System.out.print(root.getData() + " ");
-        preOrder(root.getLeftChild());
-        preOrder(root.getRightChild());
-
-
+        inOrder(root.getRightChild());
     }
 
     public static void main(String[] args) {
@@ -26,8 +27,7 @@ public class PreOrderTraversal {
         BST.add(8);
         BST.add(12);
 
-        preOrder(BST.getRoot());
-
+        inOrder(BST.getRoot());
 
     }
 }

@@ -1,7 +1,10 @@
-package tree;
+package tree.kthMaximumVal;
+
+import tree.bstImpl.BinarySearchTreeIterative;
+import tree.bstImpl.Node;
 
 //Time complexity is O(n)
-public class KthMaximumValue {
+public class KthMaximumValueIterative {
 
     public static int maximumKthValue(Node root , int k){
         //result to store the value seperated by ,

@@ -1,16 +1,20 @@
-package tree;
+package tree.traversal;
 
-public class PostOrderTraversal {
+import tree.bstImpl.BinarySearchTreeIterative;
+import tree.bstImpl.Node;
 
-    //prints the children nodes first before parent node
-    public static  void postOrder(Node root){
+public class PreOrderTraversal {
+
+    //level by level order where it print left child before right child
+    public static  void preOrder(Node root){
         if(root == null){
             return;
         }
-
-        postOrder(root.getLeftChild());
-        postOrder(root.getRightChild());
         System.out.print(root.getData() + " ");
+        preOrder(root.getLeftChild());
+        preOrder(root.getRightChild());
+
+
     }
 
     public static void main(String[] args) {
@@ -25,6 +29,8 @@ public class PostOrderTraversal {
         BST.add(8);
         BST.add(12);
 
-        postOrder(BST.getRoot());
+        preOrder(BST.getRoot());
+
+
     }
 }
