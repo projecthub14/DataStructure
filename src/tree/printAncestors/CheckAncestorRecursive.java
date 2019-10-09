@@ -1,4 +1,4 @@
-package tree;
+package tree.printAncestors;
 
 import tree.bstImpl.BinarySearchTreeIterative;
 import tree.bstImpl.Node;
