@@ -2,6 +2,17 @@ package arrays;
 
 public class QuickSort {
 
+    //Pivot , Partitioning
+
+    //a. job of partition sub routine is to find pivot
+    //b. pivot is the value within the partititon space that I want to find a position for
+    //c. return index of pivot
+
+    //we randomly choose pivot
+
+    //a. i -> remember last position that element was placed in , that was less than pivot
+    //b. j -> scan from L to R-1 and see if they are greater than or less than pivot
+
     public static int partition(int[] arr,int low,int high) {
         int pivot = arr[high];
         int i = low - 1; // index of smaller element
@@ -25,6 +36,9 @@ public class QuickSort {
     }
 
     public static void sort(int[] arr , int low,int high) {
+        //a. splits the input
+        //b. calls the partition at first and we get pivot from partition step
+        //c. run our trees going left and right
         if(low < high)
         {
             int partition = partition(arr,low,high);

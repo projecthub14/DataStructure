@@ -13,6 +13,7 @@ public class BalancedParanthesesCheck {
 
     public static boolean checkBalanced(String expression){
 
+
         Stack<Character> stack = new Stack<>(expression.length());
         for (int i = 0; i <expression.length() ; i++) {
 
@@ -42,7 +43,7 @@ public class BalancedParanthesesCheck {
 
     public static void main(String[] args) {
 
-        String expression = "{[()]}";
+        String expression = "{()}[)";
         System.out.println(checkBalanced(expression));
     }
 }

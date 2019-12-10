@@ -6,13 +6,14 @@ public class ProductArray {
         int[] result = new int[arr.length];
         int temp =1;
         for (int i = 0; i < arr.length; i++) {
+            //result[i] -> value of previous product
             result[i] = temp;
-            temp = temp * arr[i];
+            temp = temp * arr[i];// current value multiplied by previous product
         }
         temp = 1;
         for (int i = arr.length-1; i >=0; i--) {
-            result[i] *= temp;
-            temp *= arr[i];
+            result[i] *= temp; // previous product * product from right
+            temp *= arr[i];// product from right
         }
         return result;
     }
