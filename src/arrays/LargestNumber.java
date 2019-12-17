@@ -22,7 +22,7 @@ public class LargestNumber {
 
         Arrays.sort(asStrs, new LargestNumberComparator());
 
-        if(asStrs[0].equals('0')){
+        if(asStrs[0].equals("0")){
             return "0";
         }
         String result = new String();
@@ -33,7 +33,7 @@ public class LargestNumber {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3,30,34,5,9};
+        int[] nums = {0,0};
         LargestNumber largeNum = new LargestNumber();
         System.out.println(largeNum.largestNumber(nums));
     }
